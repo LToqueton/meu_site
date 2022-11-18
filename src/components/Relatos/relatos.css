@@ -1,0 +1,44 @@
+.container .relatos_container{
+    width: 40%;
+}
+.avatar_cliente{
+    width: 4rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.4 rem solid var(--color-primary-variant);
+}
+
+.relato{
+    background: var(--color-primary-variant);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    user-select: none;
+}
+
+.review_cliente{
+    color: var(--color-light);
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin:  0.8rem auto 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .container .relatos_container{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .container .relatos_container{
+        width: var(--container-width-sm);
+    }
+    
+    .review_cliente{
+        width: var(--container-width-sm);
+    }
+}

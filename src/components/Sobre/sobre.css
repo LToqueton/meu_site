@@ -1,0 +1,96 @@
+.sobre__container{
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+
+.sobre__mim{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        var(--color-primary),
+        transparent
+    );
+    display: grid;
+    place-items: center;
+}
+
+.sobre__mim-img{
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(12deg);
+    transition: var(--transition);
+}
+.sobre__mim-img:hover{
+    transform: rotate(0);
+}
+.sobre__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.sobre_card{
+    background: var(--color-primary-variant);
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+.sobre_card:hover{
+background: transparent;
+border-color: rgb(127, 187, 255);
+cursor: default;
+}
+
+.sobre__icone{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.sobre_card h5{
+    font-size:  0.98rem;
+    color: rgb(127, 187, 255);
+}
+
+.sobre_card small{
+    font-size:  0.8rem;
+}
+
+.sobre__container p{
+    margin: 2rem 0 2.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .sobre__container{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .sobre__mim{
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+    .sobre__container p{
+        margin: 1rem 0 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sobre__mim{
+        width: 60%;
+        margin: 0 auto 3rem;
+    }
+    .sobre__cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .sobre__conteudo{
+        text-align: center;
+    }
+    .sobre__conteudo p{
+        margin: 1.5rem 0;
+    }
+}

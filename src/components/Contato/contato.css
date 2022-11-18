@@ -1,0 +1,80 @@
+.container_contato{
+    width: 58%;
+    display: grid;
+    grid-template-columns: 28% 50%; 
+    gap: 12%;
+}
+
+.opcoes_contato{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.opcao_contato{
+    background: rgba(38, 80, 128, 0.527);
+    padding: 0.6rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.opcao_contato:hover{
+    background: transparent;
+    border-color: rgba(53, 107, 133, 0.562);
+}
+
+.opcao_contato-icone{
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.opcao_contato a {
+    margin-top: 0.5rem;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.opcao_contato h5 {
+    margin-top: 0.6rem;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input, textarea{
+    margin-top: 0.2rem;
+    width: 100%;
+    padding: 1.5rem; 
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid rgba(38, 80, 128, 0.527);
+    resize: none;
+    color: rgb(236, 236, 236);
+}
+
+.btn_envio{
+    background: rgb(25, 66, 105);
+}
+.btn_envio:hover{
+    background: transparent;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container_contato{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container_contato{
+        width: var(--container-width-sm);
+    }
+}
